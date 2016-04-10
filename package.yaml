@@ -1,5 +1,5 @@
 name: eddiv2
-version: 0.0.0
+version: 0.0.1
 description: eddiv2
 repository: https://github.com/val314159/eddiv2
 scripts:
@@ -8,4 +8,7 @@ scripts:
   compile: sh scripts/compile.sh
   clean: sh scripts/clean.sh
   open: open index.html
+dependencies:
+  eel-parser:   ">0.0.1"
+  eel-compiler: ">0.0.1"
 license: MIT
