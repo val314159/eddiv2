@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import json,yaml
+f=yaml.load(open('package.yaml'))
+json.dump(f,open('package.json','w'),indent=4)
