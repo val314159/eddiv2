@@ -3,11 +3,12 @@
     "repository": "https://github.com/val314159/eddiv2", 
     "license": "MIT", 
     "scripts": {
-        "test": "npm run compile && open http://127.0.0.1:9090/index.html", 
         "compile": "sh scripts/compile.sh", 
-        "open": "open index.html", 
         "pkg": "./scripts/yaml2json", 
-        "clean": "sh scripts/clean.sh"
+        "clean": "sh scripts/clean.sh", 
+        "test": "npm run compile && open http://127.0.0.1:9090/index.html", 
+        "open": "open index.html", 
+        "serve": "sh scripts/serve.sh"
     }, 
     "dependencies": {
         "eel-parser": ">0.0.1", 

@@ -6,7 +6,8 @@ scripts:
   pkg: ./scripts/yaml2json
   test: npm run compile && open http://127.0.0.1:9090/index.html
   compile: sh scripts/compile.sh
-  clean: sh scripts/clean.sh
+  serve:   sh scripts/serve.sh
+  clean:   sh scripts/clean.sh
   open: open index.html
 dependencies:
   eel-parser:   ">0.0.1"
