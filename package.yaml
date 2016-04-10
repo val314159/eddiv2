@@ -11,4 +11,5 @@ scripts:
 dependencies:
   eel-parser:   ">0.0.1"
   eel-compiler: ">0.0.1"
+  escape2: ">0.0.1"
 license: MIT

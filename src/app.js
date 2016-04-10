@@ -15,9 +15,9 @@ setTimeout(function(){
     document.write("<pre id='t' contenteditable=true>\n\n</pre>");
     document.write("<pre id='m' contenteditable=true> U:**---  app.js-------BOT  L164----[(Javascript)]------------------------------\n</pre>");
     document.write("<pre id='e' contenteditable=true>\n</pre>");
-    var t=global.t=document.getElementById('t');
-    var m=global.m=document.getElementById('m');
-    var e=global.e=document.getElementById('e');
+    t = document.getElementById('t'); // text area
+    m = document.getElementById('m'); // mode line
+    e = document.getElementById('e'); // echo area / mini buffer
     t.focus();
     var keyDecoder = new KeyDecoder(KeyMappify.isDone,KeyMappify.done);
     t.onkeydown = keyDecoder.d.bind(keyDecoder);
