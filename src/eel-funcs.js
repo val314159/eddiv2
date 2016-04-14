@@ -36,3 +36,7 @@ $other_window=function(count, all_frames){
     print("OTHER WINDOW");
     $next_window();
 }
+$delete_backward_char=function(count, all_frames){
+    print("DELETE BACKWARD CHAR");
+    DivUtils.deleteBackwardChar();    
+}

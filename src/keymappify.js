@@ -23,6 +23,7 @@ function done(x){
     if(x==='TAB')$insert('\t');
     else if(x==='RET')$insert('\n');
     else if(x==='SPC')$insert(' ');
+    else if(x==='DEL')$delete_backward_char();
     else if(x==='C-x C-s')$save_buffer();
     else if(x==='C-x C-f')$find_file();
     else if(x==='C-x o')$other_window();
@@ -36,6 +37,7 @@ function doneMinibuf(x){
 	t.focus();
 	$insert_file_contents(e.innerHTML);
     }else if(x==='SPC')$insert(' ');
+    else if(x==='DEL')$delete_backward_char();
     else if(x==='C-x C-s')$save_buffer();
     else if(x==='C-x C-f')$find_file();
     else if(x==='C-x o')$other_window();
